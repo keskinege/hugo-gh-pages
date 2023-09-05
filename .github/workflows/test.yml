@@ -27,7 +27,8 @@ jobs:
         with:
           cmd: |
             targets=${{ fromJSON(vars['test']) }}
-            echo "${{ targets.availability }}"
+            for x in targets; do echo x; done
+           
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
