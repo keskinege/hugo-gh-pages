@@ -26,6 +26,8 @@ jobs:
         uses: mikefarah/yq@master
         with:
           cmd: |
+            PARSED_JSON=$(echo "$vars['test']" | fromJSON)
+
             targets=${{ fromJSON(vars['test']) }}
             for x in targets; do echo x; done
            
