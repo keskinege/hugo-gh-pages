@@ -28,9 +28,9 @@ jobs:
           cmd: |
             
             targets="${{ fromJSON(vars['test']).availability }}"
-            echo "${{ targets }}"
+           
             
-            
+            yq -i 'with(.upstreams[];.targets = [{"target":"${{ targets }}"}])' .github/artifacts/kong/productdata_v2-kong.yaml
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
