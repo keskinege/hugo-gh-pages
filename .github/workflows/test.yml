@@ -27,7 +27,7 @@ jobs:
         with:
           cmd: |
 
-            availability="${{ fromJSON(vars['test']).availability }}"
+            availability= "${{ fromJSON(vars['test']).availability }}"
             echo "${{ availability }}"
             
 
