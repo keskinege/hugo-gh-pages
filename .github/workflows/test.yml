@@ -26,7 +26,7 @@ jobs:
         uses: mikefarah/yq@master
         with:
           cmd: |
-            echo "${{ vars['test'] }}"
+            
             targets="${{ fromJSON(vars['test']).availability }}"
             echo $targets
             
