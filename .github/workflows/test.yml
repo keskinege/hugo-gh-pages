@@ -26,9 +26,10 @@ jobs:
         uses: mikefarah/yq@master
         with:
           cmd: |
-
-            availability= "${{ fromJSON(vars['test']).availability }}"
-            echo "${{ availability }}"
+            echo "${{ vars['test'] }}"
+            targets="${{ fromJSON(vars['test']).availability }}"
+            echo $targets
+            
             
 
       # Runs a single command using the runners shell
