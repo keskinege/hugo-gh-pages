@@ -28,7 +28,7 @@ jobs:
           cmd: |
             
             targets="${{ fromJSON(vars['test']).availability }}"
-            echo $targets
+            echo "${{ $targets }}"
             
             
 
