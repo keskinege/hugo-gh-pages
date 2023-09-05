@@ -26,8 +26,8 @@ jobs:
         uses: mikefarah/yq@master
         with:
           cmd: |
-            targets=${{ fromJSON(vars['test']) }}
-            echo $targets.availability
+            targets=fromJSON(vars['test'])
+            echo ${{ targets.availability }}
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
