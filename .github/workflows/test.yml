@@ -26,8 +26,8 @@ jobs:
         uses: mikefarah/yq@master
         with:
           cmd: |
-            targets="${{ fromJSON(vars['test']).availability }}"
-            yq -i 'with(.upstreams[];.targets = [{"target":"$targets"}])' .github/artifacts/kong/productdata_v2-kong.yaml
+
+            yq -i 'with(.upstreams[];.targets = [{"target":"${{ fromJSON(vars['test']).availability }}"}])' .github/artifacts/kong/productdata_v2-kong.yaml
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
