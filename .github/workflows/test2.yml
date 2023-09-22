@@ -24,4 +24,4 @@ jobs:
         groupname: ${{ fromJSON( vars[ RUNTIMES ] ) }}
     steps:
       - name: Tell me
-        run: echo "${{ matrix.groupname.runtime }}"
+        run: echo "${{ matrix.groupname.runtime }}" 
