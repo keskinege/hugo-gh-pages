@@ -10,18 +10,20 @@ jobs:
     steps: 
       - name: Set variables
         shell: bash
+        id: setme
         run: |
           branch="${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}"
           branch="${branch^^}"
           echo "branch_name=${branch}" >> $GITHUB_ENV
-          echo "runtimes=${branch}_RUNTIMES" >> $GITHUB_ENV
+          echo "runtimes=${branch}_RUNTIMES" >> $GITHUB_OUTPUT
 
   all-targets:
+    needs: setTarget
     name: Deploy
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        groupname: ${{ fromJSON( env.MAIN_RUNTIMES  ) }}
+        groupname: {{ fromJSON( vars[needs.setTarget.outputs.runtimes] }}
     steps:
       - name: Tell me
         run: echo "${{ matrix.groupname.runtime }}" 
