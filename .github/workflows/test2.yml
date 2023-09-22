@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        groupname: ${{ fromJSON( vars[ $RUNTIMES ] ) }}
+        groupname: ${{ fromJSON( vars[ RUNTIMES ] ) }}
     steps:
       - name: Tell me
         run: echo "${{ matrix.groupname.runtime }}"
