@@ -1,6 +1,8 @@
 name: Prepare Changes
 on:
-  workflow_dispatch:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
 jobs:
   setTarget:
     name: Get Runtime Values
