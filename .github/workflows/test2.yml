@@ -1,0 +1,25 @@
+name: Prepare Changes
+on:
+  workflow_dispatch:
+jobs:
+setTarget:
+    name: Get Runtime Values
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Set variables
+        shell: bash
+        run: |
+          branch="${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}"
+          branch="${branch^^}"
+          echo "branch_name=${branch}" >> $GITHUB_ENV
+          echo "runtimes=${branch}_RUNTIMES" >> $GITHUB_ENV
+
+  all-targets:
+    name: Deploy
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        groupname: ${{ fromJSON( vars[ env.runtimes ] ) }}
+    steps:
+      - name: 
+        run: echo "${{ matrix.groupname.runtime }}"
