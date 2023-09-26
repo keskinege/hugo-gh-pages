@@ -21,6 +21,7 @@ jobs:
           echo "runtimes=${branch}_RUNTIMES" >> $GITHUB_OUTPUT
         
   getTarget:
+      needs: setTarget
       name: Show
       runs-on: ubuntu-latest
       steps: 
@@ -28,7 +29,7 @@ jobs:
           shell: bash
      
           run: | 
-            echo ${{ vars[needs.setTarget.outputs.runtimes] }}
+            echo "${{ vars[needs.setTarget.outputs.runtimes] }} "
   all-targets:
     needs: setTarget
     name: Deploy
