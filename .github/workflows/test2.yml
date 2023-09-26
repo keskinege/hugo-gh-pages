@@ -19,7 +19,7 @@ jobs:
           echo "branch_name=${branch}" >> $GITHUB_ENV
           runtimes="${branch}_RUNTIMES"
           echo "runtimes=${branch}_RUNTIMES" >> $GITHUB_OUTPUT
-          echo "${{ fromJSON(vars.MAIN_RUNTIMES)[0] }}"
+          echo "${{ fromJSON(vars.MAIN_RUNTIMES)[0].runtime }}"
   all-targets:
     needs: setTarget
     name: Deploy
