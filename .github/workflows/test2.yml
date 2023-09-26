@@ -29,7 +29,7 @@ jobs:
           shell: bash
      
           run: | 
-            echo "${{ fromJSON(vars[needs.setTarget.outputs.runtimes]) }} "
+            echo "${{ fromJSON(vars[needs.setTarget.outputs.runtimes]).0 }} "
   all-targets:
     needs: setTarget
     name: Deploy
