@@ -23,13 +23,12 @@ jobs:
   getTarget:
       name: Show
       runs-on: ubuntu-latest
-    
       steps: 
-        - name: Set variables
+        - name: Get variables
           shell: bash
-          id: setme
+     
           run: | 
-            echo ${{ fromJSON(vars[needs.setTarget.outputs.runtimes]) }}
+            echo ${{ vars[needs.setTarget.outputs.runtimes] }}
   all-targets:
     needs: setTarget
     name: Deploy
