@@ -1,6 +1,5 @@
-
-name: 1. Prepare Configuration Changes
-
+ 
+name: PR Up
 on:
   workflow_dispatch: 
 
