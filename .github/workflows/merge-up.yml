@@ -17,7 +17,7 @@ jobs:
           branch="${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}"
           branch="${branch^^}"
           echo "branch_name=${branch}" >> $GITHUB_OUTPUT
-          echo TEST > TEST
+          echo "TEST" > TEST
       id: set_vars
   
     - name: Create PR 
