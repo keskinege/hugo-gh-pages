@@ -7,20 +7,19 @@ jobs:
   runs-on: ubuntu-latest
   steps:
   
-  - name: Checkout
-    uses: actions/checkout@v3
+    - name: Checkout
+      uses: actions/checkout@v3
   
-  - name: Set variables
-        shell: bash
-        run: |
+    - name: Set variables
+      shell: bash
+      run: |
           branch="${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}"
           branch="${branch^^}"
           echo "branch_name=${branch}" >> $GITHUB_OUTPUT
   
-  - name: Create PR for changed Kong Gateway Configuration
-        # The only file that should be changed for this PR is platform/kong/.generated/kong.yaml
-        uses: peter-evans/create-pull-request@v5
-        with:
+    - name: Create PR for changed Kong Gateway Configuration
+      uses: peter-evans/create-pull-request@v5
+      with:
           title: Send prepared kong config to pre-deployment check..
           branch: mergeup-${{ steps.set_vars.outputs.branch_name }}
           delete-branch: true
