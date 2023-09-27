@@ -17,10 +17,11 @@ jobs:
           branch="${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}"
           branch="${branch^^}"
           echo "branch_name=${branch}" >> $GITHUB_OUTPUT
+      id: set_vars
   
-    - name: Create PR for changed Kong Gateway Configuration
+    - name: Create PR 
       uses: peter-evans/create-pull-request@v5
       with:
-          title: Send prepared kong config to pre-deployment check..
+          title: Create a clean branch
           branch: mergeup-${{ steps.set_vars.outputs.branch_name }}
           delete-branch: true
