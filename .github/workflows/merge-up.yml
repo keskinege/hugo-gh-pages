@@ -3,7 +3,10 @@ on:
   workflow_dispatch: 
 
 jobs:
-  step1:
+  name: PR Up
+  runs-on: ubuntu-latest
+  steps:
+  
   - name: Checkout
     uses: actions/checkout@v3
   
