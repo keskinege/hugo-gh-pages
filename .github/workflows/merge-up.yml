@@ -3,6 +3,7 @@ on:
   workflow_dispatch: 
 
 jobs:
+ prup:
   name: PR Up
   runs-on: ubuntu-latest
   steps:
