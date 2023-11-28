@@ -21,8 +21,6 @@ jobs:
       id: set_vars
   
     - name: Create PR 
-      uses: peter-evans/create-pull-request@v5
-      with:
-          title: Create a clean branch
-          branch: mergeup-${{ steps.set_vars.outputs.branch_name }}
-          delete-branch: true
+      run: |
+        test = fromJSON(env.test)
+        
