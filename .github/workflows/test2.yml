@@ -25,6 +25,7 @@ jobs:
         with:
           title: Send prepared kong config to pre-deployment check..
           branch: preparing
+          labels: preparing
           delete-branch: true
 
         
