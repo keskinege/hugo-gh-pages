@@ -4,39 +4,27 @@ on:
   push:
     branches: [ "main" ]
 jobs:
-  setTarget:
+  doPr:
     name: Get Runtime Values
     runs-on: ubuntu-latest
-    outputs:
-       runtimes: ${{ steps.setme.outputs.runtimes }}
     steps: 
-      - name: Set variables
-        shell: bash
-        id: setme
-        run: |
-          branch="${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}"
-          branch="${branch^^}"
-          echo "branch_name=${branch}" >> $GITHUB_ENV
-          runtimes="${branch}_RUNTIMES"
-          echo "runtimes=${branch}_RUNTIMES" >> $GITHUB_OUTPUT
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Create PR for changed Kong Gateway Configuration
+        # The only file that should be changed for this PR is platform/kong/.generated/kong.yaml
+        uses: peter-evans/create-pull-request@v5
+        with:
+          title: Send prepared kong config to pre-deployment check..
+          branch: preparing-${{ steps.set_vars.outputs.branch_name }}
+          delete-branch: true
+
         
-  getTarget:
-      needs: setTarget
+  secondStep:
+      needs: doPr
       name: Show
       runs-on: ubuntu-latest
       steps: 
         - name: Get variables
           shell: bash
-     
           run: | 
-            echo "${{ fromJSON(vars[needs.setTarget.outputs.runtimes])[0].runtime }} "
-  all-targets:
-    needs: setTarget
-    name: Deploy
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        groupname: ${{ fromJSON(vars[needs.setTarget.outputs.runtimes]) }}
-    steps:
-      - name: Tell me
-        run: echo "${{ matrix.groupname.runtime }}" 
+              echo "here I am"
