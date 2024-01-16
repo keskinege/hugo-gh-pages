@@ -4,6 +4,10 @@ on:
   push:
     branches: 
       - main 
+  pull_request: 
+    branches: 
+      - **
+
 jobs:
   doPr:
     name: Get Runtime Values
@@ -14,7 +18,7 @@ jobs:
       - name: Update
         shell: bash
         run: | 
-          echo "10" > test.txt
+          echo "12" > test.txt
       - name: Create PR for changed Kong Gateway Configuration
         uses: peter-evans/create-pull-request@v5
         with:
@@ -32,5 +36,5 @@ jobs:
         - name: Get variables
           shell: bash
           run: | 
-              echo "${GITHUB_HEAD_REF}"
+              echo "${{ GITHUB_HEAD_REF }}"
        
