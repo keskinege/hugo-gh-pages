@@ -11,11 +11,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Create PR for changed Kong Gateway Configuration
-        # The only file that should be changed for this PR is platform/kong/.generated/kong.yaml
         uses: peter-evans/create-pull-request@v5
         with:
           title: Send prepared kong config to pre-deployment check..
-          branch: preparing-${{ steps.set_vars.outputs.branch_name }}
+          branch: preparing
           delete-branch: true
 
         
