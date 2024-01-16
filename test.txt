@@ -1,14 +1,14 @@
 {
-  "token": "ghs_veorY1gKrtJXYYXlkrj3wuUQ41x82e1x2uUV",
+  "token": "ghs_DXi8tIwz3zDCb8CfkF0ACJaSgHdPWY3uTUHO",
   "job": "doPr",
   "ref": "refs/heads/main",
-  "sha": "ae1302eebdf3a08b2a8cb7280ad6d21299f1f6cc",
+  "sha": "d1ac1c5122d6f145c56462320d770cbb96f47f96",
   "repository": "keskinege/test",
   "repository_owner": "keskinege",
   "repository_owner_id": "27840979",
   "repositoryUrl": "git://github.com/keskinege/test.git",
-  "run_id": "7541586356",
-  "run_number": "119",
+  "run_id": "7541592422",
+  "run_number": "120",
   "retention_days": "90",
   "run_attempt": "1",
   "artifact_cache_size_limit": "10",
@@ -24,27 +24,27 @@
   "base_ref": "",
   "event_name": "push",
   "event": {
-    "after": "ae1302eebdf3a08b2a8cb7280ad6d21299f1f6cc",
+    "after": "d1ac1c5122d6f145c56462320d770cbb96f47f96",
     "base_ref": null,
-    "before": "c9ac9db612b61874bec1885b1c28a53b312ead44",
+    "before": "ae1302eebdf3a08b2a8cb7280ad6d21299f1f6cc",
     "commits": [
       {
         "author": {
-          "email": "keskinege@gmail.com",
+          "email": "keskinege@users.noreply.github.com",
           "name": "keskinege",
           "username": "keskinege"
         },
         "committer": {
-          "email": "keskinege@gmail.com",
-          "name": "keskinege",
-          "username": "keskinege"
+          "email": "noreply@github.com",
+          "name": "GitHub",
+          "username": "web-flow"
         },
-        "distinct": true,
-        "id": "9147d53088b09fd3e10807368d9fde0c5c713bef",
-        "message": "Update test2.yml",
-        "timestamp": "2024-01-16T13:29:04+01:00",
-        "tree_id": "33f16ebafd5da94e9347208d7de9323cce58a290",
-        "url": "https://github.com/keskinege/test/commit/9147d53088b09fd3e10807368d9fde0c5c713bef"
+        "distinct": false,
+        "id": "aaa4279b4d35cda88b47fe2c646477d172a81f5f",
+        "message": "[create-pull-request] automated change",
+        "timestamp": "2024-01-16T12:29:23Z",
+        "tree_id": "b20777d4d311e365bcec2f9896c4b1b721481bdc",
+        "url": "https://github.com/keskinege/test/commit/aaa4279b4d35cda88b47fe2c646477d172a81f5f"
       },
       {
         "author": {
@@ -53,19 +53,19 @@
           "username": "keskinege"
         },
         "committer": {
-          "email": "keskinege@gmail.com",
-          "name": "keskinege",
-          "username": "keskinege"
+          "email": "noreply@github.com",
+          "name": "GitHub",
+          "username": "web-flow"
         },
         "distinct": true,
-        "id": "ae1302eebdf3a08b2a8cb7280ad6d21299f1f6cc",
-        "message": "Merge branch main of https://github.com/keskinege/test",
-        "timestamp": "2024-01-16T13:29:07+01:00",
-        "tree_id": "d3f72c7cf0f8d1a5f263c514ca760ce54dc28f7c",
-        "url": "https://github.com/keskinege/test/commit/ae1302eebdf3a08b2a8cb7280ad6d21299f1f6cc"
+        "id": "d1ac1c5122d6f145c56462320d770cbb96f47f96",
+        "message": "Merge pull request #17 from keskinege/preparing\n\nSend prepared kong config to pre-deployment check..",
+        "timestamp": "2024-01-16T13:29:41+01:00",
+        "tree_id": "b20777d4d311e365bcec2f9896c4b1b721481bdc",
+        "url": "https://github.com/keskinege/test/commit/d1ac1c5122d6f145c56462320d770cbb96f47f96"
       }
     ],
-    "compare": "https://github.com/keskinege/test/compare/c9ac9db612b6...ae1302eebdf3",
+    "compare": "https://github.com/keskinege/test/compare/ae1302eebdf3...d1ac1c5122d6",
     "created": false,
     "deleted": false,
     "forced": false,
@@ -76,16 +76,16 @@
         "username": "keskinege"
       },
       "committer": {
-        "email": "keskinege@gmail.com",
-        "name": "keskinege",
-        "username": "keskinege"
+        "email": "noreply@github.com",
+        "name": "GitHub",
+        "username": "web-flow"
       },
       "distinct": true,
-      "id": "ae1302eebdf3a08b2a8cb7280ad6d21299f1f6cc",
-      "message": "Merge branch main of https://github.com/keskinege/test",
-      "timestamp": "2024-01-16T13:29:07+01:00",
-      "tree_id": "d3f72c7cf0f8d1a5f263c514ca760ce54dc28f7c",
-      "url": "https://github.com/keskinege/test/commit/ae1302eebdf3a08b2a8cb7280ad6d21299f1f6cc"
+      "id": "d1ac1c5122d6f145c56462320d770cbb96f47f96",
+      "message": "Merge pull request #17 from keskinege/preparing\n\nSend prepared kong config to pre-deployment check..",
+      "timestamp": "2024-01-16T13:29:41+01:00",
+      "tree_id": "b20777d4d311e365bcec2f9896c4b1b721481bdc",
+      "url": "https://github.com/keskinege/test/commit/d1ac1c5122d6f145c56462320d770cbb96f47f96"
     },
     "pusher": {
       "email": "keskinege@gmail.com",
@@ -148,8 +148,8 @@
       "name": "test",
       "node_id": "R_kgDOKPrWQA",
       "notifications_url": "https://api.github.com/repos/keskinege/test/notifications{?since,all,participating}",
-      "open_issues": 1,
-      "open_issues_count": 1,
+      "open_issues": 0,
+      "open_issues_count": 0,
       "owner": {
         "avatar_url": "https://avatars.githubusercontent.com/u/27840979?v=4",
         "email": "keskinege@gmail.com",
@@ -174,7 +174,7 @@
       },
       "private": true,
       "pulls_url": "https://api.github.com/repos/keskinege/test/pulls{/number}",
-      "pushed_at": 1705408150,
+      "pushed_at": 1705408181,
       "releases_url": "https://api.github.com/repos/keskinege/test/releases{/id}",
       "size": 107,
       "ssh_url": "git@github.com:keskinege/test.git",
@@ -225,15 +225,15 @@
   "ref_type": "branch",
   "secret_source": "Actions",
   "workflow_ref": "keskinege/test/.github/workflows/test2.yml@refs/heads/main",
-  "workflow_sha": "ae1302eebdf3a08b2a8cb7280ad6d21299f1f6cc",
+  "workflow_sha": "d1ac1c5122d6f145c56462320d770cbb96f47f96",
   "workspace": "/home/runner/work/test/test",
   "action": "__run",
   "event_path": "/home/runner/work/_temp/_github_workflow/event.json",
   "action_repository": "",
   "action_ref": "",
-  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_8f7b9c4b-acf8-41dd-8803-339f703c8ac5",
-  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_8f7b9c4b-acf8-41dd-8803-339f703c8ac5",
-  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_8f7b9c4b-acf8-41dd-8803-339f703c8ac5",
-  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_8f7b9c4b-acf8-41dd-8803-339f703c8ac5",
-  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_8f7b9c4b-acf8-41dd-8803-339f703c8ac5"
+  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_ec0e2229-8d27-46b4-af82-e075fd049d6a",
+  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_ec0e2229-8d27-46b4-af82-e075fd049d6a",
+  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_ec0e2229-8d27-46b4-af82-e075fd049d6a",
+  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_ec0e2229-8d27-46b4-af82-e075fd049d6a",
+  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_ec0e2229-8d27-46b4-af82-e075fd049d6a"
 }
