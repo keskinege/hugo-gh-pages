@@ -19,7 +19,7 @@ jobs:
       - name: Update
         shell: bash
         run: | 
-          echo "15" > test.txt
+          echo "16" > test.txt
       - name: Create PR for changed Kong Gateway Configuration
         uses: peter-evans/create-pull-request@v5
         with:
@@ -29,7 +29,6 @@ jobs:
 
         
   secondStep:
-      needs: doPr
       name: Show
       if:  ${{ github.event.pull_request.merged == true }}
       runs-on: ubuntu-latest
