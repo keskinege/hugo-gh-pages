@@ -31,6 +31,6 @@ jobs:
       steps: 
         - name: Get variables
           shell: bash
-          if: github.head_ref='preparing'
+          if: github.head_ref=='preparing'
           run: | 
               echo ${github.head_ref}
