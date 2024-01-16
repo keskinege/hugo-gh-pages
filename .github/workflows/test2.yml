@@ -26,10 +26,11 @@ jobs:
   secondStep:
       needs: doPr
       name: Show
-      if: github.head_ref='preparing'
+     
       runs-on: ubuntu-latest
       steps: 
         - name: Get variables
           shell: bash
+          if: github.head_ref='preparing'
           run: | 
               echo ${github.head_ref}
