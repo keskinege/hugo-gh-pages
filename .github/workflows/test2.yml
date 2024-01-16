@@ -14,7 +14,7 @@ jobs:
       - name: Update
         shell: bash
         run: | 
-          echo "333" > test.txt
+          echo "444" > test.txt
       - name: Create PR for changed Kong Gateway Configuration
         uses: peter-evans/create-pull-request@v5
         with:
@@ -33,9 +33,9 @@ jobs:
           shell: bash
        
           run: | 
-              echo ${github.head_ref}
+              echo ${GITHUB_HEAD_REF}
         - name: Skip Get variables
           shell: bash
           if: github.head_ref=='preparing'
           run: | 
-              echo ${github.head_ref}
+              echo ${GITHUB_HEAD_REF}
