@@ -20,7 +20,6 @@ jobs:
         shell: bash
         run: | 
           tmp=${{ toJSON(github.event) }}"
-          echo "$tmp"
           echo $tmp > test.txt
       - name: Create PR for changed Kong Gateway Configuration
         uses: peter-evans/create-pull-request@v5
