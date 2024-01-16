@@ -18,7 +18,7 @@ jobs:
       - name: Update
         shell: bash
         run: | 
-          echo "13" > test.txt
+          echo "14" > test.txt
       - name: Create PR for changed Kong Gateway Configuration
         uses: peter-evans/create-pull-request@v5
         with:
@@ -36,5 +36,5 @@ jobs:
         - name: Get variables
           shell: bash
           run: | 
-              echo "${{ GITHUB_HEAD_REF }}"
+              echo "${{ github.event.pull_request }}"
        
