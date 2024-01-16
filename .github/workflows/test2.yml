@@ -31,4 +31,4 @@ jobs:
         - name: Get variables
           shell: bash
           run: | 
-              echo "here I am"
+              echo ${github.head_ref}
