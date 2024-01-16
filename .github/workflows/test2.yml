@@ -19,7 +19,7 @@ jobs:
       - name: Update
         shell: bash
         run: | 
-          echo "16" > test.txt
+          echo "17" > test.txt
       - name: Create PR for changed Kong Gateway Configuration
         uses: peter-evans/create-pull-request@v5
         with:
