@@ -1,14 +1,14 @@
 {
-  "token": "ghs_veorY1gKrtJXYYXlkrj3wuUQ41x82e1x2uUV",
+  "token": "ghs_GjZDwFKCD1kDfDqliDFojHYYNDkJvO3Vewdn",
   "job": "doPr",
   "ref": "refs/heads/main",
-  "sha": "ae1302eebdf3a08b2a8cb7280ad6d21299f1f6cc",
+  "sha": "6a3ef1ec4e970bae5e934daff13ee361c8da0fcf",
   "repository": "keskinege/test",
   "repository_owner": "keskinege",
   "repository_owner_id": "27840979",
   "repositoryUrl": "git://github.com/keskinege/test.git",
-  "run_id": "7541586356",
-  "run_number": "119",
+  "run_id": "7541753887",
+  "run_number": "122",
   "retention_days": "90",
   "run_attempt": "1",
   "artifact_cache_size_limit": "10",
@@ -24,9 +24,9 @@
   "base_ref": "",
   "event_name": "push",
   "event": {
-    "after": "ae1302eebdf3a08b2a8cb7280ad6d21299f1f6cc",
+    "after": "6a3ef1ec4e970bae5e934daff13ee361c8da0fcf",
     "base_ref": null,
-    "before": "c9ac9db612b61874bec1885b1c28a53b312ead44",
+    "before": "d1ac1c5122d6f145c56462320d770cbb96f47f96",
     "commits": [
       {
         "author": {
@@ -40,32 +40,14 @@
           "username": "keskinege"
         },
         "distinct": true,
-        "id": "9147d53088b09fd3e10807368d9fde0c5c713bef",
+        "id": "6a3ef1ec4e970bae5e934daff13ee361c8da0fcf",
         "message": "Update test2.yml",
-        "timestamp": "2024-01-16T13:29:04+01:00",
-        "tree_id": "33f16ebafd5da94e9347208d7de9323cce58a290",
-        "url": "https://github.com/keskinege/test/commit/9147d53088b09fd3e10807368d9fde0c5c713bef"
-      },
-      {
-        "author": {
-          "email": "keskinege@gmail.com",
-          "name": "keskinege",
-          "username": "keskinege"
-        },
-        "committer": {
-          "email": "keskinege@gmail.com",
-          "name": "keskinege",
-          "username": "keskinege"
-        },
-        "distinct": true,
-        "id": "ae1302eebdf3a08b2a8cb7280ad6d21299f1f6cc",
-        "message": "Merge branch main of https://github.com/keskinege/test",
-        "timestamp": "2024-01-16T13:29:07+01:00",
-        "tree_id": "d3f72c7cf0f8d1a5f263c514ca760ce54dc28f7c",
-        "url": "https://github.com/keskinege/test/commit/ae1302eebdf3a08b2a8cb7280ad6d21299f1f6cc"
+        "timestamp": "2024-01-16T13:43:20+01:00",
+        "tree_id": "82c64465647e69cd0b58cb046e97c571a446c7ab",
+        "url": "https://github.com/keskinege/test/commit/6a3ef1ec4e970bae5e934daff13ee361c8da0fcf"
       }
     ],
-    "compare": "https://github.com/keskinege/test/compare/c9ac9db612b6...ae1302eebdf3",
+    "compare": "https://github.com/keskinege/test/compare/d1ac1c5122d6...6a3ef1ec4e97",
     "created": false,
     "deleted": false,
     "forced": false,
@@ -81,11 +63,11 @@
         "username": "keskinege"
       },
       "distinct": true,
-      "id": "ae1302eebdf3a08b2a8cb7280ad6d21299f1f6cc",
-      "message": "Merge branch main of https://github.com/keskinege/test",
-      "timestamp": "2024-01-16T13:29:07+01:00",
-      "tree_id": "d3f72c7cf0f8d1a5f263c514ca760ce54dc28f7c",
-      "url": "https://github.com/keskinege/test/commit/ae1302eebdf3a08b2a8cb7280ad6d21299f1f6cc"
+      "id": "6a3ef1ec4e970bae5e934daff13ee361c8da0fcf",
+      "message": "Update test2.yml",
+      "timestamp": "2024-01-16T13:43:20+01:00",
+      "tree_id": "82c64465647e69cd0b58cb046e97c571a446c7ab",
+      "url": "https://github.com/keskinege/test/commit/6a3ef1ec4e970bae5e934daff13ee361c8da0fcf"
     },
     "pusher": {
       "email": "keskinege@gmail.com",
@@ -174,7 +156,7 @@
       },
       "private": true,
       "pulls_url": "https://api.github.com/repos/keskinege/test/pulls{/number}",
-      "pushed_at": 1705408150,
+      "pushed_at": 1705409002,
       "releases_url": "https://api.github.com/repos/keskinege/test/releases{/id}",
       "size": 107,
       "ssh_url": "git@github.com:keskinege/test.git",
@@ -225,15 +207,15 @@
   "ref_type": "branch",
   "secret_source": "Actions",
   "workflow_ref": "keskinege/test/.github/workflows/test2.yml@refs/heads/main",
-  "workflow_sha": "ae1302eebdf3a08b2a8cb7280ad6d21299f1f6cc",
+  "workflow_sha": "6a3ef1ec4e970bae5e934daff13ee361c8da0fcf",
   "workspace": "/home/runner/work/test/test",
   "action": "__run",
   "event_path": "/home/runner/work/_temp/_github_workflow/event.json",
   "action_repository": "",
   "action_ref": "",
-  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_8f7b9c4b-acf8-41dd-8803-339f703c8ac5",
-  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_8f7b9c4b-acf8-41dd-8803-339f703c8ac5",
-  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_8f7b9c4b-acf8-41dd-8803-339f703c8ac5",
-  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_8f7b9c4b-acf8-41dd-8803-339f703c8ac5",
-  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_8f7b9c4b-acf8-41dd-8803-339f703c8ac5"
+  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_5927dcd2-47ac-436d-a36e-87d1002c88ee",
+  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_5927dcd2-47ac-436d-a36e-87d1002c88ee",
+  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_5927dcd2-47ac-436d-a36e-87d1002c88ee",
+  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_5927dcd2-47ac-436d-a36e-87d1002c88ee",
+  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_5927dcd2-47ac-436d-a36e-87d1002c88ee"
 }
