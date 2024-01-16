@@ -36,6 +36,5 @@ jobs:
         - name: Get variables
           shell: bash
           run: | 
-              tmp="${{ toJSON(github.event) }}"
-              echo "$tmp"
+            echo "${{ toJSON(github.event)  }}"
        
