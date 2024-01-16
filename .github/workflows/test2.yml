@@ -14,7 +14,7 @@ jobs:
       - name: Update
         shell: bash
         run: | 
-          echo "121" > test.txt
+          echo "333" > test.txt
       - name: Create PR for changed Kong Gateway Configuration
         uses: peter-evans/create-pull-request@v5
         with:
@@ -26,6 +26,7 @@ jobs:
   secondStep:
       needs: doPr
       name: Show
+      if: github.head_ref!="main"
       runs-on: ubuntu-latest
       steps: 
         - name: Get variables
