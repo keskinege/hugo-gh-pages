@@ -1,6 +1,1 @@
-# test
-
-
-kk
-
-hello
+A sample to publish to gh-pages with hugo
